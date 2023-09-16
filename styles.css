@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --text: #e0efdc;
+    --background: #060a05;
+    --primary: #59b173;
+    --secondary: #17312b;
+    --accent: #5fb4a3;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    height: 100vh;
+
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+    color: var(--text);
+    background-color: var(--background);
+
+    display: grid;
+    grid-template-columns: minmax(256px, 512px);
+    place-content: center;
+    gap: 16px;
+}
+
+header {
+    margin-bottom: 16px;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+h1 {
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--secondary);
+}
+
+#start {
+    padding: 8px 16px;
+    border: 2px solid var(--secondary);
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    color: var(--accent);
+    background-color: var(--background);
+}
+
+#start:hover {
+    cursor: pointer;
+    background-color: var(--secondary);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+#word {
+    text-align: left;
+    margin: 0px;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+
+    border-radius: 8px 8px 0px 0px;
+    border-width: 2px 2px 0px 2px;
+    border-style: solid;
+    border-color: var(--secondary);
+}
+
+#input {
+    flex-grow: 1;
+
+    padding: 16px;
+    border-radius: 0px 0px 8px 8px;
+    border: none;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    color: var(--text);
+    background-color: var(--secondary);
+}
+
+#input:focus {
+    outline: none;
+}
+
+.meta {
+    display: flex;
+    gap: 16px;
+}
+
+.metaData {
+    flex: 1;
+    padding: 16px;
+    
+    border: 2px solid var(--secondary);
+    border-radius: 8px;
+
+    font-size: 14px;
+    text-align: left;
+
+    color: var(--accent);
+    background-color: var(--background);
+}
+
+#restart {
+    justify-self: center;
+
+    flex: 1;
+    padding: 8px 16px;
+    
+    border: 2px solid var(--secondary);
+    border-radius: 8px;
+
+    font-size: 14px;
+    text-align: left;
+
+    color: var(--accent);
+    background-color: var(--background);
+}
+
+#restart:hover {
+    cursor: pointer;
+    background-color: var(--secondary);
+}

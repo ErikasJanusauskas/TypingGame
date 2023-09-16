@@ -10,7 +10,7 @@ const words = [
 
 let wordIndex = 0;
 let score = 0;
-let countdown = 60;
+let countdown = 30;
 let timerInterval;
 
 const wordElement = document.getElementById("word");

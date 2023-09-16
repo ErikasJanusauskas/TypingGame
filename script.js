@@ -69,7 +69,7 @@ function checkInput() {
 
 startButton.addEventListener("click", startGame);
 restartButton.addEventListener("click", () => {
-    countdown = 60;
+    countdown = 30;
     score = 0;
     scoreElement.textContent = "0 words";
     startGame();
